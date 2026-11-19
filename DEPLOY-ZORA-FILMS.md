@@ -2,14 +2,15 @@
 
 ## Ovaj paket
 
-- Verzija stranice: **Lovable v8 + v9 popravak kontrasta i glatkoće mobilnog prijelaza Analog softness, digital precision**.
+- Verzija stranice: **Lovable v8 + v10 usklađeni mobilni prijelaz Analog softness, digital precision**, nadograđen na posljednji V9 kompletan paket.
 - Izvorni ZIP SHA-256: `39f8030034aa57d5c96982489e7e22e9eb59cf40602a79b050d6dd2518c3ed37`.
-- Izvorne JavaScript, CSS, video, slikovne i font datoteke v8 ostale su **bajtno nepromijenjene**.
-- Dodana je nova, samostalna i kompletna glavna CSS datoteka `public/assets/styles-zora-20261119-mobile-wipe.css`, koja sadrži izvorni CSS i isključivo mobilne korekcije. Svih 13 HTML datoteka upućuje na novi naziv kako stara verzija ne bi ostala u predmemoriji.
-- Mobilni prijelaz svijetle pozadine i otkrivanja crnog teksta izglađen je kratkom, sinkroniziranom tranzicijom. Naslov postaje potpuno crn nakon prolaska pozadine; tekst na crnoj podlozi ostaje bijel/s izvornim akvarelnim detaljima.
-- Na desktopu se korekcije ne primjenjuju. Nikakvi drugi dijelovi stranice i animacije nisu mijenjani.
+- Sve postojeće JavaScript, CSS, video, slikovne i font datoteke V9 paketa ostale su **bajtno nepromijenjene**.
+- Dodana su samo dva nova resursa: `public/assets/zora-mobile-analog-reveal-v10.css` i `public/assets/zora-mobile-analog-reveal-v10.js`; početna datoteka `public/index.html` povezuje ih na stranicu.
+- Na mobitelu bijela ploha, akvarel, naslov i odlomak koriste istu granicu prijelaza. Otkrivanje je glatko, tekst na bijelom postaje crn, a pri skrolanju natrag vraća se crna pozadina s bijelim tekstom.
+- Početak i kraj otkrivanja koriste istu jednadžbu položaja skrolanja kao postojeća desktop verzija. Isključivo mobilna interpolacija uklanja trzanje pri skrolanju.
+- Na desktopu se nove korekcije ne primjenjuju. Kompozicija, tipografija, veličine, razmaci i ostale animacije nisu mijenjani.
 - Cijeli gotov statički build nalazi se unutar `public/`.
-- `ORIGINAL-VERIFY-SHA256.txt` sadrži kontrolne zbrojeve svih datoteka stranice.
+- `ORIGINAL-VERIFY-SHA256.txt` sadrži kontrolne zbrojeve svih datoteka ove završne verzije stranice.
 
 ## Struktura za postojeći GitHub repozitorij
 
